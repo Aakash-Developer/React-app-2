@@ -1,0 +1,92 @@
+{
+  "enquiries": [
+    {
+      "id": 101,
+      "firstName": "Aakash",
+      "lastName": "Macwan",
+      "email": "akki007mac@gmail.com",
+      "phone": "08460002016",
+      "selected_course": 5
+    },
+    {
+      "id": 102,
+      "firstName": "Aakash",
+      "lastName": "Macwan",
+      "email": "akki007mac@gmail.com",
+      "phone": "08460002016",
+      "selected_course": 3
+    },
+    {
+      "id": 103,
+      "firstName": "Aakash",
+      "lastName": "Macwan",
+      "email": "akki007mac@gmail.com",
+      "phone": "08460002016",
+      "selected_course": 3
+    },
+    {
+      "id": 104,
+      "firstName": "Neha",
+      "lastName": "Macs",
+      "email": "neha@gmail.com",
+      "phone": "08238546808",
+      "selected_course": 2
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Introduction to React",
+      "description": "Learn the basics of React.js framework.",
+      "instructor": "John Smith",
+      "duration": "4 weeks",
+      "price": "$49.99",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "title": "Advanced React Techniques",
+      "description": "Master advanced concepts and techniques in React.",
+      "instructor": "Jane Doe",
+      "duration": "6 weeks",
+      "price": "$69.99",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "title": "React Native Basics",
+      "description": "Learn how to build mobile apps with React Native.",
+      "instructor": "Alex Johnson",
+      "duration": "5 weeks",
+      "price": "$59.99",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "title": "React Hooks Crash Course",
+      "description": "Discover the power of React hooks for state management.",
+      "instructor": "Emily Wilson",
+      "duration": "3 weeks",
+      "price": "$39.99",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "title": "React and Redux Integration",
+      "description": "Learn how to integrate Redux with React for scalable applications.",
+      "instructor": "Michael Brown",
+      "duration": "4 weeks",
+      "price": "$49.99",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "title": "Server-side Rendering with React",
+      "description": "Explore server-side rendering techniques with React.",
+      "instructor": "Sarah Johnson",
+      "duration": "4 weeks",
+      "price": "$49.99",
+      "image": ""
+    }
+  ]
+}
