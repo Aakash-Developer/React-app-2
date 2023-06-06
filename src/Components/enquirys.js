@@ -38,9 +38,9 @@ return(
               </div>
               </div>
               <div className="border-start ps-3 border-3" >
-              <p className="m-0">Name : <h6 className="m-0 d-inline">{enq.firstName}{enq.lastName}</h6></p>
-              <p className="m-0">Contact No : {enq.phone}</p>
-              <p className="m-0">Email : {enq.email}</p>
+              <p className="m-0">Name : <h6 className="m-0 d-inline">{enq.firstName}  {enq.lastName}</h6></p>
+              <p className="m-0">Contact No : <a className="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover link-primary" href={`tel:${enq.phone}`}>{enq.phone}</a></p>
+              <p className="m-0">Email : <a className="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover link-primary" href= {`mailto: ${enq.email}`}>{enq.email}</a></p>
               </div>
               </div>
             </div>
