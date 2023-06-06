@@ -17,13 +17,13 @@ const Products=()=>{
   }
 
   return(
-    <div className="card mb-3">
+    <div className="card mb-3 shadow-lg">
     <div className="card-header bg-dark fw-bolder text-white">{title}</div>
     <div className="card-body">
     <ul className='p-0'>
               {
                 products.map((course) => (
-                <div className='card mb-2' key={course.id}>
+                <div className='card mb-2 shadow' key={course.id}>
                 <div className='card-body d-flex gap-3 align-items-top p-2'>
                 <div>
                 <img src={img} alt='' className='rounded' width={200}/>

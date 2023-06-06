@@ -2,11 +2,13 @@ import { useState } from "react";
 import axios from 'axios';
 const { useEffect } = require("react")
 
+
 const Enquirys=()=>{ 
   const courseURL = 'http://localhost:6700/courses';
   const enquirysURL = 'http://localhost:6700/enquiries';
   const [courses,setcourses] = useState([]);
   const [enquirys,setenquirys] = useState([]);
+  const [img] = useState('/img/react.jpg')
 
   useEffect(() => {
     GetProducts();
@@ -18,15 +20,33 @@ const Enquirys=()=>{
   }
 
 return(
-    <div className="card">
-    <div className="card-header bg-dark text-white">Course Enquirys</div>
-    <div className="card-body">
-    {
-      enquirys.map((enq)=>
-      <li key={enq.id}>{enq.firstName} {enq.lastName}</li>
-      )
-    }
-    </div>
+  <div className="card shadow-lg">
+      <div className="card-header bg-dark text-white">Course Enquirys</div>
+      <div className="card-body">
+        {enquirys.flatMap((enq) => {
+          const matchingCourses = courses.filter((course) => enq.selected_course === course.id);
+          return matchingCourses.map((course) => (
+            <div className="card mb-3 shadow" key={enq.id}>
+              <div className="card-body p-2 d-flex align-items-start gap-3">
+              <div className="p-0 d-flex align-items-start gap-3">
+              <div><img src={img} alt="" width={151} className="rounded img-thumbnail shadow"/></div>
+              <div>
+                <p className="fs-10 m-0">Selected Course : <h6 className="m-0 d-inline">{course.title}</h6></p>
+                <p className="m-0">Description : {course.description}</p>
+                <p className="m-0">Price : {course.price}</p>
+                <p className="m-0">Duration : {course.duration}</p>
+              </div>
+              </div>
+              <div className="border-start ps-3 border-3" >
+              <p className="m-0">Name : <h6 className="m-0 d-inline">{enq.firstName}{enq.lastName}</h6></p>
+              <p className="m-0">Contact No : {enq.phone}</p>
+              <p className="m-0">Email : {enq.email}</p>
+              </div>
+              </div>
+            </div>
+          ));
+        })}
+      </div>
     </div>
 )
 }
