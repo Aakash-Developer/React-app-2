@@ -20,7 +20,7 @@ const Enquirys=()=>{
   }
 
 return(
-  <div className="card shadow-lg">
+  <div className="card shadow-lg mb-3">
       <div className="card-header bg-dark text-white">Course Enquirys</div>
       <div className="card-body">
         {enquirys.flatMap((enq) => {
